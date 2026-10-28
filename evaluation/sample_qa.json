@@ -1,0 +1,30 @@
+[
+    {
+        "answer_contains": "retrieved documents",
+        "question": "What does Retrieval-Augmented Generation ground answers in?",
+        "relevant_sources": [
+            "rag_explained.md"
+        ]
+    },
+    {
+        "answer_contains": "embeddings",
+        "question": "What does a vector database store?",
+        "relevant_sources": [
+            "vector_databases.md"
+        ]
+    },
+    {
+        "answer_contains": "Azure OpenAI Service",
+        "question": "Which Azure service gives access to large language models?",
+        "relevant_sources": [
+            "azure_overview.md"
+        ]
+    },
+    {
+        "answer_contains": "overlap",
+        "question": "Why is an overlap used between consecutive chunks?",
+        "relevant_sources": [
+            "embeddings_and_chunking.md"
+        ]
+    }
+]

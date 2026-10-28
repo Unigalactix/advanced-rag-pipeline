@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-pipeline"
+version = "0.1.0"
+description = "Advanced Retrieval-Augmented Generation pipeline: hybrid BM25 + dense retrieval, MMR re-ranking, LRU caching, and retrieval evaluation. Offline-first (stdlib + numpy)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Rajesh Kodaganti" }]
+keywords = ["rag", "retrieval-augmented-generation", "bm25", "embeddings", "llm", "nlp"]
+dependencies = ["numpy>=1.26"]
+
+[project.optional-dependencies]
+openai = ["openai>=1.0"]
+api = ["fastapi>=0.110", "uvicorn>=0.29"]
+dev = ["openai>=1.0"]
+
+[project.urls]
+Homepage = "https://github.com/Unigalactix/advanced-rag-pipeline"
+Repository = "https://github.com/Unigalactix/advanced-rag-pipeline"
+
+[tool.setuptools.packages.find]
+where = ["src"]
